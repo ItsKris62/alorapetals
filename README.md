@@ -3,6 +3,8 @@
 ## Overview
 Alora Petals is a vibrant and colorful flower export website designed to showcase various flowers and their catalogs. The website features high-quality images and videos, subtle animations, and transitions to enhance user engagement.
 
+## Framework
+React JS
 
 ## Color Scheme
 The website uses a soft pastel color scheme:
