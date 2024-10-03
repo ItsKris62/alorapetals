@@ -1,130 +1,92 @@
-// ContactUs.js
 import React, { useState } from 'react';
-import contactBackground from '../assets/images/pexels-anniroenkae-2382738.jpg'; // Import the background image
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-    date: '',
-  });
+  const [isAgreed, setIsAgreed] = useState(false);
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // You can handle form submission logic here
-    alert('Form submitted successfully!');
+  const handleToggle = () => {
+    setIsAgreed(!isAgreed);
   };
 
   return (
-    <section
-      className="relative h-screen w-full bg-cover bg-center"
-      style={{ backgroundImage: `url(${contactBackground})` }} // Apply the background image
-    >
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div className="relative z-10 flex justify-center items-center h-full">
-        <div className="bg-white bg-opacity-80 p-10 rounded-lg shadow-lg w-2/3">
-          <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
-          <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Name Field */}
-            <div className="flex flex-col space-y-1">
-              <label htmlFor="name" className="text-gray-700 font-medium">
-                Name
-              </label>
+    <div className="flex justify-center items-center h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 p-6">
+      <div className="max-w-6xl w-full bg-white/30 backdrop-blur-lg rounded-lg shadow-xl p-8 md:p-12 flex flex-col md:flex-row">
+        {/* Left Section - Get in Touch */}
+        <div className="md:w-1/2 p-6 flex flex-col justify-center">
+          <h2 className="text-4xl font-bold text-white mb-4">Get in Touch</h2>
+          <p className="text-white mb-4">
+            We'd love to hear from you! Whether you have a question about our flowers, pricing, or anything else, feel free to get in touch with us. Our team is here to help you.
+          </p>
+          <p className="text-white mb-4">
+            <strong>Email:</strong> aloraroyalventures@gmail.com
+          </p>
+          <p className="text-white mb-4">
+            <strong>Phone:</strong> +254 710 272174
+          </p>
+          <p className="text-white">
+            <strong>Address:</strong> 123 Flower Street, Blossom City, FL 12345
+          </p>
+        </div>
+
+        {/* Right Section - Contact Form */}
+        <div className="md:w-1/2 p-6">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">Contact Us</h2>
+          <form className="space-y-4">
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
               <input
                 type="text"
                 id="name"
-                name="name"
-                className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-purple-600 transition-all"
-                value={formData.name}
-                onChange={handleChange}
-                required
+                className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500"
+                placeholder="Enter your name"
               />
             </div>
-
-            {/* Email Field */}
-            <div className="flex flex-col space-y-1">
-              <label htmlFor="email" className="text-gray-700 font-medium">
-                Email
-              </label>
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
               <input
                 type="email"
                 id="email"
-                name="email"
-                className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-purple-600 transition-all"
-                value={formData.email}
-                onChange={handleChange}
-                required
+                className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500"
+                placeholder="Enter your email"
               />
             </div>
-
-            {/* Phone Field */}
-            <div className="flex flex-col space-y-1">
-              <label htmlFor="phone" className="text-gray-700 font-medium">
-                Phone
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-purple-600 transition-all"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            {/* Date Field */}
-            <div className="flex flex-col space-y-1">
-              <label htmlFor="date" className="text-gray-700 font-medium">
-                Preferred Meeting Date
-              </label>
-              <input
-                type="date"
-                id="date"
-                name="date"
-                className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-purple-600 transition-all"
-                value={formData.date}
-                onChange={handleChange}
-                required
-                min={new Date().toISOString().split('T')[0]} // Restrict to future dates
-              />
-            </div>
-
-            {/* Message Field */}
-            <div className="flex flex-col space-y-1">
-              <label htmlFor="message" className="text-gray-700 font-medium">
-                Message
-              </label>
+            <div>
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
               <textarea
                 id="message"
-                name="message"
                 rows="4"
-                className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-purple-600 transition-all"
-                value={formData.message}
-                onChange={handleChange}
-                required
+                className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500"
+                placeholder="Your message"
               ></textarea>
             </div>
 
-            {/* Submit Button */}
-            <div className="flex justify-center">
-              <button
-                type="submit"
-                className="bg-purple-600 text-white py-2 px-6 rounded-lg hover:bg-purple-800 transition-all duration-300"
-              >
-                Submit
-              </button>
+            {/* Privacy Policy Toggle */}
+            <div className="flex items-center mt-4">
+              <input
+                type="checkbox"
+                id="privacy"
+                checked={isAgreed}
+                onChange={handleToggle}
+                className="w-5 h-5 text-purple-600 border-gray-300 rounded focus:ring-purple-500"
+              />
+              <label htmlFor="privacy" className="ml-2 block text-sm text-gray-700">
+                By selecting this, you agree to our <a href="/privacy-policy" className="text-purple-600 hover:underline">privacy policy</a>.
+              </label>
             </div>
+
+            {/* Submit Button */}
+            <button
+              type="submit"
+              className={`w-full py-3 mt-6 rounded-lg text-white bg-purple-600 hover:bg-purple-800 transition-all duration-300 font-semibold ${
+                !isAgreed && 'opacity-50 cursor-not-allowed'
+              }`}
+              disabled={!isAgreed}
+            >
+              Send Message
+            </button>
           </form>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import catalogPdf from '../assets/Alora Petals - Price list.pdf'; // Add the path to your PDF file
+import catalogPdf from '../assets/Catalogue__Version001_Optimized.pdf'; // Add the path to your PDF file
 
 import roseImage from '../assets/images/1.jpg';
 import tulipImage from '../assets/images/10.jpg';
