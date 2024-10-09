@@ -1,8 +1,8 @@
-import roseImage from '../assets/images/white lilly.png';
-import tulipImage from '../assets/images/red_tulips.jpg';
-import lilyImage from '../assets/images/6.jpg';
-import orchidImage from '../assets/images/hydrangea.webp';
-import daisyImage from '../assets/images/gypsophilia.webp';
+import roseImage from '../assets/images/1.jpg';
+import tulipImage from '../assets/images/2.jpg';
+import lilyImage from '../assets/images/4.jpg';
+import orchidImage from '../assets/images/3.jpg';
+import daisyImage from '../assets/images/5.jpg';
 
 const FeaturedFlowers = () => {
     const flowers = [

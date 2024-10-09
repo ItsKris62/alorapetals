@@ -23,7 +23,10 @@ const ContactUs = () => {
             <strong>Phone:</strong> +254 710 272174
           </p>
           <p className="text-white">
-            <strong>Address:</strong> 123 Flower Street, Blossom City, FL 12345
+            <strong>Address:</strong> JKIA Opp, Kuenhe Nagel
+          </p>
+          <p className="text-white">
+            <strong>P.O Box:</strong> 15993 - 00100 GPO
           </p>
         </div>
 

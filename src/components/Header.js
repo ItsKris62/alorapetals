@@ -30,32 +30,32 @@ const Header = () => {
         {/* Logo and Company Name */}
         <div className="flex items-center space-x-3">
           <img src={logo} alt="Alora Petals Logo" className="h-10 w-10" />
-          <span className="text-2xl font-bold text-gray-800">Alora Petals</span>
+          <span className="font-playfair text-2xl font-bold text-gray-800">Alora Petals</span>
         </div>
 
         {/* Menu */}
         <nav className="space-x-6">
   <Link
     to="/"
-    className="text-gray-600 hover:text-purple-600 transition-all duration-300"
+    className="font-montserrat text-gray-600 hover:text-purple-600 transition-all duration-300"
   >
     Home
   </Link>
   <Link
     to="/catalog"
-    className="text-gray-600 hover:text-purple-600 transition-all duration-300"
+    className="font-montserrat text-gray-600 hover:text-purple-600 transition-all duration-300"
   >
     Catalog
   </Link>
   <Link
     to="/contact"
-    className="text-gray-600 hover:text-purple-600 transition-all duration-300"
+    className="font-montserrat text-gray-600 hover:text-purple-600 transition-all duration-300"
   >
     Contact
   </Link>
   <Link
     to="/blog"
-    className="text-gray-600 hover:text-purple-600 transition-all duration-300"
+    className="font-montserrat text-gray-600 hover:text-purple-600 transition-all duration-300"
   >
     Blog
   </Link>

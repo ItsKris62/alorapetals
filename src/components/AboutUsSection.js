@@ -1,4 +1,4 @@
-import aboutUsImage from '../assets/images/row-fresh-green-plants-pot.jpg'; // Update the path based on your project structure
+import aboutUsImage from '../assets/images/flowers_production.jpg'; // Update the path based on your project structure
 
 const AboutUsSection = () => {
   return (
@@ -18,16 +18,18 @@ const AboutUsSection = () => {
 
         {/* Description Section */}
         <div className="w-1/2">
-          <p className="text-lg text-gray-700 mb-4">
-            At Alora Petals, we specialize in providing high-quality flowers for
-            export worldwide. With a dedication to excellence, our carefully
-            cultivated flowers ensure a captivating and vibrant display for any
-            occasion.
+        <p className="text-lg text-gray-700 mb-4 transition-opacity duration-500 hover:opacity-80">
+            Welcome to Alora Petals, a leading fresh cut flower export company dedicated to delivering premium quality blooms worldwide.
+            With a strong presence in international flower markets, we specialize in exporting fresh flowers to the
+            Middle East, Asia, Europe and Africa, ensuring that our clients receive fresh and vibrant flowers every time.
           </p>
-          <p className="text-lg text-gray-700 mb-6">
-            Our commitment to sustainable farming and exceptional customer
-            service has earned us a reputation as a trusted name in the flower
-            export industry.
+          <p className="text-lg text-gray-700 mb-6 transition-opacity duration-500 hover:opacity-80">
+            We partner with sustainable flower farms ensuring that every stem export is grown with care and meets the highest standards of 
+            quality and freshness. Whether you need flowers for florists, wholesalers, retailers and even event planners, our diverse range of 
+            fresh cut flowers ensures we meet your specific floral needs.
+
+            At Alora Petals we pride ourselves on delivering exceptional customer service and timely shipments, thanks to our advanced cold chain 
+            logistics and specialized packaging solutions.
           </p>
           <a
             href="/about-us"

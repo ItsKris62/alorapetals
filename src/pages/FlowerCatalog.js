@@ -1,72 +1,101 @@
 import { useState } from "react";
 import catalogPdf from '../assets/Catalogue__Version001_Optimized.pdf'; // Add the path to your PDF file
 
-import roseImage from '../assets/images/1.jpg';
-import tulipImage from '../assets/images/10.jpg';
-import lilyImage from '../assets/images/11.jpg';
-import orchidImage from '../assets/images/12.jpg';
-import daisyImage from '../assets/images/13.jpg';
+import veronicaImage from '../assets/images/1.jpg';
+import staticeImage from '../assets/images/2.jpg';
+import hypericumImage from '../assets/images/3.jpg';
+import craspediaImage from '../assets/images/4.jpg';
+import sunflowersImage from '../assets/images/5.jpg';
+import chrysanthemumImage from '../assets/images/6.jpg';
+import lilliesImage from '../assets/images/7.jpg';
+import fernsImage from '../assets/images/8.jpg';
+import ruscusImage from '../assets/images/9.jpg';
+import limoniumImage from '../assets/images/10.jpg';
+import caspiaImage from '../assets/images/11.jpg';
+import gypsophilaImage from '../assets/images/12.jpg';
+import rosesImage from '../assets/images/13.jpg';
+
+
 
 const FlowerCatalog = () => {
   const flowers = [
     {
-        name: "Rose",
+        name: "Veronica",
         price50cm: "$10",
         price80cm: "$15",
-        image: roseImage, // Imported image for rose
+        image: veronicaImage, // Imported image for rose
       },
       {
-        name: "Tulip",
+        name: "Statice",
         price50cm: "$8",
         price80cm: "$12",
-        image: tulipImage, // Imported image for tulip
+        image: staticeImage, // Imported image for tulip
       },
       {
-        name: "Lily",
+        name: "Hypericum berries",
         price50cm: "$12",
         price80cm: "$18",
-        image: lilyImage, // Imported image for lily
+        image: hypericumImage, // Imported image for lily
       },
       {
-        name: "Orchid",
+        name: "Craspedia",
         price50cm: "$20",
         price80cm: "$25",
-        image: orchidImage, // Imported image for orchid
+        image: craspediaImage, // Imported image for orchid
       },
       {
-        name: "Daisy",
+        name: "Sunflowers",
         price50cm: "$6",
         price80cm: "$9",
-        image: daisyImage, // Imported image for daisy
+        image: sunflowersImage, // Imported image for daisy
       },
       {
-        name: "Daisy",
+        name: "Chrysanthemum",
         price50cm: "$6",
         price80cm: "$9",
-        image: daisyImage, // Imported image for daisy
+        image: chrysanthemumImage, // Imported image for daisy
       },
       {
-        name: "Daisy",
+        name: "Oriental lillies",
         price50cm: "$6",
         price80cm: "$9",
-        image: daisyImage, // Imported image for daisy
+        image: lilliesImage, // Imported image for daisy
       },
       {
-        name: "Daisy",
+        name: "Leather ferns",
         price50cm: "$6",
         price80cm: "$9",
-        image: daisyImage, // Imported image for daisy
-      },{
-        name: "Daisy",
-        price50cm: "$6",
-        price80cm: "$9",
-        image: daisyImage, // Imported image for daisy
+        image: fernsImage, // Imported image for daisy
       },
       {
-        name: "Daisy",
+        name: "Ruscus",
         price50cm: "$6",
         price80cm: "$9",
-        image: daisyImage, // Imported image for daisy
+        image: ruscusImage, // Imported image for daisy
+      },
+      {
+        name: "Limonium",
+        price50cm: "$6",
+        price80cm: "$9",
+        image: limoniumImage, // Imported image for daisy
+      },
+      {
+        name: "Caspia purple",
+        price50cm: "$6",
+        price80cm: "$9",
+        image: caspiaImage, // Imported image for daisy
+      },
+      {
+        name: "Gypsophila",
+        price50cm: "$6",
+        price80cm: "$9",
+        image: gypsophilaImage, // Imported image for daisy
+      },
+      {
+        name: "Spray roses",
+        price50cm: "$6",
+        price80cm: "$9",
+        image: rosesImage, // Imported image for daisy
       },
       // Add more flowers as needed
   ];
@@ -75,29 +104,32 @@ const FlowerCatalog = () => {
     <section className="my-16 px-6">
       <h2 className="text-3xl font-bold text-center mb-10">Flower Catalog</h2>
       
-      {/* Download button with bounce animation */}
-      <div className="flex justify-center mb-6">
-        <a href={catalogPdf} download="AloraPetals_Catalog.pdf">
-          <button
-            className="cursor-pointer bg-gray-800 px-3 py-2 rounded-md text-white tracking-wider shadow-xl animate-bounce hover:animate-none"
-          >
-            <svg
-              className="w-5 h-5"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
-                strokeLinejoin="round"
-                strokeLinecap="round"
-              ></path>
-            </svg>
-          </button>
-        </a>
-      </div>
+     {/* Download button with bounce animation and text */}
+<div className="flex justify-center items-center mb-6 space-x-3">
+  <a href={catalogPdf} download="AloraPetals_Catalog.pdf">
+    <button
+      className="cursor-pointer bg-gray-800 px-3 py-2 rounded-md text-white tracking-wider shadow-xl animate-bounce hover:animate-none"
+    >
+      <svg
+        className="w-5 h-5"
+        stroke="currentColor"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+          strokeLinejoin="round"
+          strokeLinecap="round"
+        ></path>
+      </svg>
+    </button>
+  </a>
+  
+  {/* Text next to the button */}
+  <span className="font-oswald text-lg font-medium text-gray-800">Download Catalog</span>
+</div>
 
       {/* Flower Catalog Grid */}
       <div className="grid grid-cols-5 gap-6">

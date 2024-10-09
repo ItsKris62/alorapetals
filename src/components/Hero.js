@@ -19,7 +19,7 @@ const Hero = () => {
 {/* Content Centered */}
 <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-black to-transparent flex flex-col justify-center items-center pb-10">
     {/* Text Above Button */}
-    <h2 className="text-white text-xl md:text-2xl font-semibold text-center mb-4">
+    <h2 className="font-oswald text-white text-xl md:text-2xl font-semibold text-center mb-4">
         Discover the beauty of our premium flowers
     </h2>
     {/* Call to Action */}
