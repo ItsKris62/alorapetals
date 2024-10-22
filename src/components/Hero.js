@@ -1,4 +1,4 @@
-import flowerVideo from "../assets/images/greenhouse.jpg";
+import flowerVideo from "../assets/videos/roses.mp4";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
