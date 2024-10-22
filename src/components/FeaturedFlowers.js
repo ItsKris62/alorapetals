@@ -7,32 +7,37 @@ import daisyImage from '../assets/images/13.jpg';
 const FeaturedFlowers = () => {
   const flowers = [
     {
-      name: "Rose",
-      description: "A beautiful red rose known for its elegance and fragrance.",
+      name: "Tarantella",
+      description:
+        "Versatile and charming variety of roses, known for their multiple small blooms per stem",
       image: roseImage,
     },
     {
-      name: "Tulip",
-      description: "Bright and bold tulip flowers that bloom in the spring.",
+      name: "Athena",
+      description:
+        "Versatile and charming variety of roses, known for their multiple small blooms per stem",
       image: tulipImage,
     },
     {
-      name: "Lily",
-      description: "White lilies symbolizing purity and refined beauty.",
+      name: "Adalonia",
+      description:
+        "Versatile and charming variety of roses, known for their multiple small blooms per stem",
       image: lilyImage,
     },
     {
-      name: "Orchid",
-      description: "Exotic orchids with vibrant colors and intricate patterns.",
+      name: "Fuschiana",
+      description:
+        "Versatile and charming variety of roses, known for their multiple small blooms per stem",
       image: orchidImage,
     },
     {
-      name: "Daisy",
-      description: "Classic white daisies representing innocence and simplicity.",
+      name: "Pink Spray Roses",
+      description:
+        "Versatile and charming variety of roses, known for their multiple small blooms per stem",
       image: daisyImage,
     },
   ];
-
+  
   return (
     <section className="my-16">
       <h2 className="text-3xl font-bold text-center mb-10">Featured Flowers</h2>
