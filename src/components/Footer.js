@@ -20,7 +20,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-[#FFFDD0] text-center py-8 px-4">
+    <footer className="bg-[#FFFDD0] text-center py-8 px-4 relative">
       {/* Footer Content */}
       <div className={`transition-all ${isScrolled ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ease-out duration-500`}>
         {/* Navigation Links */}
@@ -70,6 +70,16 @@ const Footer = () => {
         <div className="text-gray-600 text-sm">
           This site was created by <span className="font-semibold">FootprintsCo</span>.
         </div>
+      </div>
+
+      {/* Kenyan Flag and Abbreviation */}
+      <div className="absolute bottom-4 right-4 flex items-center bg-white p-2 rounded shadow">
+        <img
+          src="path/to/kenyan-flag.png" // Replace with your actual image path
+          alt="Kenyan Flag"
+          className="h-8 w-12 mr-2 border-2 border-gray-300 rounded"
+        />
+        <span className="text-lg font-bold text-gray-700">KE</span>
       </div>
     </footer>
   );
