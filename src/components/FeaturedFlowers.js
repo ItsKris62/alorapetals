@@ -7,32 +7,37 @@ import daisyImage from '../assets/images/13.jpg';
 const FeaturedFlowers = () => {
   const flowers = [
     {
-      name: "Rose",
-      description: "A beautiful red rose known for its elegance and fragrance.",
+      name: "Tarantella",
+      description:
+        "A vibrant, multi-petaled rose with striking red and orange hues.  It’s known for its dramatic presence and long-lasting blooms.",
       image: roseImage,
     },
     {
-      name: "Tulip",
-      description: "Bright and bold tulip flowers that bloom in the spring.",
+      name: "Athena",
+      description:
+        "They are known for their pristine and delicate beauty, perfect for weddings or sophisticated arrangements.",
       image: tulipImage,
     },
     {
-      name: "Lily",
-      description: "White lilies symbolizing purity and refined beauty.",
+      name: "Adalonia",
+      description:
+        "Usually recognized as a type of hybrid tea rose, Adalonia blooms feature a subtle blend of pink and peach tones, known for their large, fragrant flowers.",
       image: lilyImage,
     },
     {
-      name: "Orchid",
-      description: "Exotic orchids with vibrant colors and intricate patterns.",
+      name: "Fuschiana",
+      description:
+        "A hybrid flower often characterized by its deep magenta or fuchsia color, Fuschiana flowers are vibrant and eye-catching, commonly used in tropical-themed bouquets.",
       image: orchidImage,
     },
     {
-      name: "Daisy",
-      description: "Classic white daisies representing innocence and simplicity.",
+      name: "Pink Spray Roses",
+      description:
+        "These are small, clustered roses known for their charming and delicate pink blossoms. They’re perfect for adding a soft, romantic touch to arrangements.",
       image: daisyImage,
     },
   ];
-
+  
   return (
     <section className="my-16">
       <h2 className="text-3xl font-bold text-center mb-10">Featured Flowers</h2>

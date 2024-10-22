@@ -17,17 +17,17 @@ const HomePage = () => {
       <Header />
       <Hero />
       {/* About Us Section */}
-      <div ref={aboutRef} className={`transition-opacity duration-1000 ${aboutInView ? "opacity-100" : "opacity-0"}`}>
+      <div ref={aboutRef} className={`transition-opacity duration-100 ${aboutInView ? "opacity-100" : "opacity-0"}`}>
         <AboutUsSection />
       </div>
 
       {/* Featured Flowers Section */}
-      <div ref={flowersRef} className={`transition-opacity duration-1000 ${flowersInView ? "opacity-100" : "opacity-0"}`}>
+      <div ref={flowersRef} className={`transition-opacity duration-100 ${flowersInView ? "opacity-100" : "opacity-0"}`}>
         <FeaturedFlowers />
       </div>
 
       {/* FAQs Section */}
-      <div ref={faqsRef} className={`transition-opacity duration-1000 ${faqsInView ? "opacity-100" : "opacity-0"}`}>
+      <div ref={faqsRef} className={`transition-opacity duration-100 ${faqsInView ? "opacity-100" : "opacity-0"}`}>
         <FAQs />
       </div>
 
