@@ -38,7 +38,7 @@ const ContactSection = () => {
           <div className="flex flex-col items-center">
             <FaWhatsapp className="text-4xl text-purple-600 mb-4" />
             <p className="font-semibold text-lg">Send us a message</p>
-            <p className="text-gray-500">+254 712 345678</p>
+            <p className="text-gray-500">+254 710 272174</p>
           </div>
 
           {/* Facebook */}
