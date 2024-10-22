@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from 'react';
 import catalogPdf from '../assets/Catalogue__Version001_Optimized.pdf'; // Add the path to your PDF file
 
 import veronicaImage from '../assets/images/1.jpg';

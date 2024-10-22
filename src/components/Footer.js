@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FaWhatsapp, FaTiktok, FaInstagram, FaEnvelope, FaSkype, FaPhoneAlt } from 'react-icons/fa';
+import { FaWhatsapp, FaTiktok, FaInstagram, FaEnvelope, FaFacebook, FaPhoneAlt } from 'react-icons/fa';
 
 const Footer = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,22 +43,22 @@ const Footer = () => {
 
         {/* Social Media Icons */}
         <div className="flex justify-center space-x-6 mb-6">
-          <a href="https://wa.me/" className="text-gray-600 hover:text-green-500 transition duration-300">
+          <a href="https://wa.me/c/254710272174" className="text-gray-600 hover:text-green-500 transition duration-300">
             <FaWhatsapp size={24} />
           </a>
           <a href="https://tiktok.com/" className="text-gray-600 hover:text-black transition duration-300">
             <FaTiktok size={24} />
           </a>
-          <a href="https://instagram.com/" className="text-gray-600 hover:text-pink-500 transition duration-300">
+          <a href="https://www.instagram.com/alora_petals?igsh=MWNmMzQ5aWk2NHpodQ==" className="text-gray-600 hover:text-pink-500 transition duration-300">
             <FaInstagram size={24} />
           </a>
-          <a href="mailto:someone@example.com" className="text-gray-600 hover:text-red-500 transition duration-300">
+          <a href="mailto:aloraroyalventures@gmail.com" className="text-gray-600 hover:text-red-500 transition duration-300">
             <FaEnvelope size={24} />
           </a>
-          <a href="skype:live:username" className="text-gray-600 hover:text-blue-500 transition duration-300">
-            <FaSkype size={24} />
+          <a href="https://www.facebook.com/profile.php?id=61556671811040&mibextid=LQQJ4d" className="text-gray-600 hover:text-blue-500 transition duration-300">
+            <FaFacebook size={24} />
           </a>
-          <a href="tel:+123456789" className="text-gray-600 hover:text-blue-700 transition duration-300">
+          <a href="tel:+254710272174" className="text-gray-600 hover:text-blue-700 transition duration-300">
             <FaPhoneAlt size={24} />
           </a>
         </div>

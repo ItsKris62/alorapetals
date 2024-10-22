@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaWhatsapp, FaSkype } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaWhatsapp, FaFacebook } from 'react-icons/fa';
 
 const ContactSection = () => {
   return (
@@ -16,15 +16,15 @@ const ContactSection = () => {
           {/* Address */}
           <div className="flex flex-col items-center">
             <FaMapMarkerAlt className="text-4xl text-purple-600 mb-4" />
-            <p className="font-semibold text-lg">Visit our office</p>
-            <p className="text-gray-500">123 Flower St., Nairobi</p>
+            <p className="font-semibold text-lg">Our office</p>
+            <p className="text-gray-500">JKIA Opp, Kuenhe Nagel, Nairobi</p>
           </div>
 
           {/* Email */}
           <div className="flex flex-col items-center">
             <FaEnvelope className="text-4xl text-purple-600 mb-4" />
             <p className="font-semibold text-lg">Send us an email</p>
-            <p className="text-gray-500">info@aloraroyalventures.com</p>
+            <p className="text-gray-500">aloraroyalventures@gmail.com</p>
           </div>
 
           {/* Phone */}
@@ -41,11 +41,11 @@ const ContactSection = () => {
             <p className="text-gray-500">+254 712 345678</p>
           </div>
 
-          {/* Skype */}
+          {/* Facebook */}
           <div className="flex flex-col items-center">
-            <FaSkype className="text-4xl text-purple-600 mb-4" />
+            <FaFacebook className="text-4xl text-purple-600 mb-4" />
             <p className="font-semibold text-lg">Send us a message</p>
-            <p className="text-gray-500">live:alora.skype</p>
+            <p className="text-gray-500">Alora Petals</p>
           </div>
         </div>
       </div>

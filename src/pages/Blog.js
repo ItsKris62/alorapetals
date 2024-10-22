@@ -5,7 +5,7 @@ import BlogPostCard from '../components/BlogPostCard';
 import roseImage from '../assets/images/arrangement-with-market-full-flowers.jpg';
 import farm_visitVideo from '../assets/videos/farm_visit.mp4';
 import flowerArrangementsImage from '../assets/images/sprayroses.jpg';
-import seasonalFlowersImage from '../assets/images/row-fresh-green-plants-pot.jpg';
+// import seasonalFlowersImage from '../assets/images/row-fresh-green-plants-pot.jpg';
 import video2 from '../assets/videos/farm_visit.mp4';
 import blogImage2 from '../assets/images/pexels-evie-shaffer-1259279-2512386.jpg';
 
