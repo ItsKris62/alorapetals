@@ -1,59 +1,50 @@
 import React, { useRef } from 'react';
 
-const BlogPostCard = ({ media, title, description, postedDate }) => {
+const BlogPostCard = ({ media, title, description, postedDate, isHovered, onHover, onLeave }) => {
   const videoRef = useRef(null);
 
-  // Function to play the video when hovered
   const handleMouseEnter = () => {
-    if (videoRef.current) {
+    if (media.includes('.mp4')) {
       videoRef.current.play();
+      onHover(); // Inform parent component that this card is hovered
     }
   };
 
-  // Function to pause the video when not hovered
   const handleMouseLeave = () => {
-    if (videoRef.current) {
+    if (media.includes('.mp4')) {
       videoRef.current.pause();
+      onLeave(); // Inform parent component that hover has left
     }
   };
 
   return (
     <div
-      className="max-w-4xl flex flex-col md:flex-row rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mb-6"
+      className="relative rounded-lg overflow-hidden shadow-lg transform transition-transform duration-500 hover:scale-105"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      {/* Left Side - Media */}
-      <div className="md:w-1/2 w-full">
-        {/* If it's an image */}
+      {/* Media (Image or Video) */}
+      <div className="w-full h-64">
         {media && media.includes('.jpg') && (
-          <img className="w-full h-48 md:h-full object-cover" src={media} alt={title} />
+          <img className="w-full h-full object-cover" src={media} alt={title} />
         )}
-        {/* If it's a video */}
         {media && media.includes('.mp4') && (
           <video
+            className="w-full h-full object-cover"
             ref={videoRef}
-            className="w-full h-48 md:h-full object-cover"
             muted
             loop
-            preload="metadata" // preload video metadata for faster playback
           >
             <source src={media} type="video/mp4" />
           </video>
         )}
       </div>
 
-      {/* Right Side - Text Content */}
-      <div className="md:w-1/2 w-full p-6 flex flex-col justify-between">
-        <div>
-          <div className="font-bold text-2xl mb-2">{title}</div>
-          <p className="text-gray-700 text-base mb-4">{description}</p>
-        </div>
-        
-        {/* Posted Date */}
-        <div className="text-gray-500 text-sm mt-auto">
-          Posted on: {postedDate}
-        </div>
+      {/* Blog Info (Title, Description, Date) */}
+      <div className="absolute inset-x-0 bottom-0 bg-white/90 p-4">
+        <h3 className="text-lg font-bold text-gray-800">{title}</h3>
+        <p className="text-gray-600 mt-2">{description}</p>
+        <p className="text-gray-500 text-sm mt-4">Posted on: {postedDate}</p>
       </div>
     </div>
   );

@@ -9,29 +9,30 @@ const FAQs = () => {
 
   const faqs = [
     {
-      question: 'How do I place an order?',
+      question: 'How long does it take get your order',
       answer:
-        'You can browse our flower catalog and add the desired flowers to your cart. Once done, proceed to checkout and fill in your details to complete the order.',
+        'We process orders within 3 to 4 working days and the delivery is done on the last day. We work with trusted logistics partners to ensure timely delivery.',
     },
     {
-      question: 'What countries do you ship to?',
+      question: 'What regions or countries do export to?',
       answer:
-        'We ship to multiple countries worldwide, including the USA, UK, Canada, Australia, and various parts of Europe. For a full list, please contact our customer service.',
+        'We export to multiple regions worldwide, including the Middle East, Asia, Europe, and Africa. If you are located outside these regions please contact us to discuss shipping options',
     },
     {
-      question: 'Can I customize my flower order?',
+      question: 'How can I contact customer service?',
       answer:
-        'Yes! You can customize your flower orders by specifying the flower type, size, and arrangement style when placing an order.',
+        'Our dedicated customer support team is always available to assist you via phone or e-mail. You can find our customer support contacts at the bottom.',
+    },
+    
+    {
+      question: 'What is your minimum order quantity (MOQ)',
+      answer:
+        ' The minimum order quantity advised is 10 boxes for your whole order which is approximately 3,000 stems',
     },
     {
       question: 'How can I track my shipment?',
       answer:
         'Once your order is dispatched, we will send you a tracking number to monitor the delivery progress in real-time.',
-    },
-    {
-      question: 'Do you offer same-day delivery?',
-      answer:
-        'Same-day delivery is available in select regions. Contact our team to check if it’s available in your area.',
     },
   ];
 

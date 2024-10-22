@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import FlowerCatalog from './pages/FlowerCatalog';
 import ContactUs from './pages/ContactUs';
 import Blog from './pages/Blog';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/catalog" element={<FlowerCatalog />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/about-us" element={<AboutUs />} />
       </Routes>
       <Footer />  {/* Footer appears on all pages */}
     </Router>
