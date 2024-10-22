@@ -1,34 +1,39 @@
-import roseImage from '../assets/images/yellow_roses.jpg';
-import tulipImage from '../assets/images/roses2.jpg';
-import lilyImage from '../assets/images/whiteroses.jpg';
-import orchidImage from '../assets/images/red_roses.jpg';
-import daisyImage from '../assets/images/13.jpg';
+import roseImage from "../assets/images/yellow_roses.jpg";
+import tulipImage from "../assets/images/roses2.jpg";
+import lilyImage from "../assets/images/whiteroses.jpg";
+import orchidImage from "../assets/images/red_roses.jpg";
+import daisyImage from "../assets/images/13.jpg";
 
 const FeaturedFlowers = () => {
   const flowers = [
     {
-      name: "Rose",
-      description: "A beautiful red rose known for its elegance and fragrance.",
+      name: "Tarantella",
+      description:
+        "Versatile and charming variety of roses, known for their multiple small blooms per stem",
       image: roseImage,
     },
     {
-      name: "Tulip",
-      description: "Bright and bold tulip flowers that bloom in the spring.",
+      name: "Athena",
+      description:
+        "Versatile and charming variety of roses, known for their multiple small blooms per stem",
       image: tulipImage,
     },
     {
-      name: "Lily",
-      description: "White lilies symbolizing purity and refined beauty.",
+      name: "Adalonia",
+      description:
+        "Versatile and charming variety of roses, known for their multiple small blooms per stem",
       image: lilyImage,
     },
     {
-      name: "Orchid",
-      description: "Exotic orchids with vibrant colors and intricate patterns.",
+      name: "Fuschiana",
+      description:
+        "Versatile and charming variety of roses, known for their multiple small blooms per stem",
       image: orchidImage,
     },
     {
-      name: "Daisy",
-      description: "Classic white daisies representing innocence and simplicity.",
+      name: "Pink Spray Roses",
+      description:
+        "Versatile and charming variety of roses, known for their multiple small blooms per stem",
       image: daisyImage,
     },
   ];
