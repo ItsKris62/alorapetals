@@ -32,7 +32,7 @@ const Header = () => {
         {/* Logo and Company Name */}
         <div className="flex items-center space-x-3">
           <img src={logo} alt="Alora Petals Logo" className="h-10 w-10" />
-          <span className="font-playfair text-2xl font-bold text-gray-800">
+          <span className="font-homemade text-2xl font-bold text-gray-800">
             Alora Petals
           </span>
         </div>
