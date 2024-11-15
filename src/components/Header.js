@@ -22,17 +22,18 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-1/2 transform -translate-x-1/2 w-[95%] z-50 rounded-lg transition-all duration-500 shadow-lg ${
         isScrolled
-          ? "bg-white/50 backdrop-blur-md"
-          : "bg-white/30 backdrop-blur-md"
+          ? "bg-white/60 backdrop-blur-md border border-gray-300"
+          : "bg-white/30 backdrop-blur-md border border-gray-200"
       }`}
+      style={{ borderRadius: "10px" }}
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo and Company Name */}
         <div className="flex items-center space-x-3">
           <img src={logo} alt="Alora Petals Logo" className="h-10 w-10" />
-          <span className="font-homemade text-2xl font-bold text-gray-800">
+          <span className="font-greatvibes text-2xl font-bold text-gray-800">
             Alora Petals
           </span>
         </div>
