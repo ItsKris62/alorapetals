@@ -8,7 +8,7 @@ module.exports = {
         montserrat: ['"Montserrat"', "sans-serif"],
         lato: ['"Lato"', "sans-serif"],
         greatvibes: ['"Great Vibes"', "cursive"],
-        homemade: ['Homemade Apple"', "sans-serif"],
+        homemade: ['"Homemade Apple"', "sans-serif"], // Corrected quotes
       },
     },
   },
