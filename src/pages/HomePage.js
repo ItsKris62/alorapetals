@@ -6,6 +6,7 @@ import AboutUsSection from "../components/AboutUsSection";
 import FeaturedFlowers from "../components/FeaturedFlowers";
 import FAQs from "../components/FAQs";
 import ContactSection from "../components/ContactSection";
+import Services from "../components/Services";
 
 const HomePage = () => {
   const { ref: aboutRef, inView: aboutInView } = useInView({
@@ -34,6 +35,8 @@ const HomePage = () => {
       >
         <AboutUsSection />
       </div>
+      {/* Services Section */}
+      <Services />
 
       {/* Featured Flowers Section */}
       <div
