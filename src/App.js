@@ -17,7 +17,7 @@ function App() {
         <Route path="/catalog" element={<FlowerCatalog />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/aboutus" element={<AboutUs />} />
       </Routes>
       <Footer />  {/* Footer appears on all pages */}
     </Router>
