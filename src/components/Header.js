@@ -42,7 +42,7 @@ const Header = () => {
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className={`inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-purple-600 focus:outline-none transition-all duration-300 ${
-              isMenuOpen ? "bg-gray-200" : ""
+              isMenuOpen ? "bg-black" : ""
             }`}
           >
             <svg
@@ -78,28 +78,28 @@ const Header = () => {
         >
           <Link
             to="/"
-            className="font-montserrat text-gray-600 hover:text-purple-600 transition-all duration-300"
+            className="font-montserrat text-black hover:text-purple-600 transition-all duration-300"
             onClick={() => setIsMenuOpen(false)} // Close menu on link click
           >
             Home
           </Link>
           <Link
             to="/catalog"
-            className="font-montserrat text-gray-600 hover:text-purple-600 transition-all duration-300"
+            className="font-montserrat text-black hover:text-purple-600 transition-all duration-300"
             onClick={() => setIsMenuOpen(false)} // Close menu on link click
           >
             Catalog
           </Link>
           <Link
             to="/contact"
-            className="font-montserrat text-gray-600 hover:text-purple-600 transition-all duration-300"
+            className="font-montserrat text-black hover:text-purple-600 transition-all duration-300"
             onClick={() => setIsMenuOpen(false)} // Close menu on link click
           >
             Contact
           </Link>
           <Link
             to="/blog"
-            className="font-montserrat text-gray-600 hover:text-purple-600 transition-all duration-300"
+            className="font-montserrat text-black hover:text-purple-600 transition-all duration-300"
             onClick={() => setIsMenuOpen(false)} // Close menu on link click
           >
             Blog

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const FAQs = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
@@ -9,35 +9,37 @@ const FAQs = () => {
 
   const faqs = [
     {
-      question: 'How long does it take to get your order?',
+      question: "How long does it take to get your order?",
       answer:
-        'We process orders within 3 to 4 working days and the delivery is done on the last day. We work with trusted logistics partners to ensure timely delivery.',
+        "We process orders within 3 to 4 working days and the delivery is done on the last day. We work with trusted logistics partners to ensure timely delivery.",
     },
     {
-      question: 'What regions or countries do you export to?',
+      question: "What regions or countries do you export to?",
       answer:
-        'We export to multiple regions worldwide, including the Middle East, Asia, Europe, and Africa. If you are located outside these regions please contact us to discuss shipping options.',
+        "We export to multiple regions worldwide, including the Middle East, Asia, Europe, and Africa. If you are located outside these regions please contact us to discuss shipping options.",
     },
     {
-      question: 'How can I contact customer service?',
+      question: "How can I contact customer service?",
       answer:
-        'Our dedicated customer support team is always available to assist you via phone or e-mail. You can find our customer support contacts at the bottom.',
+        "Our dedicated customer support team is always available to assist you via phone or e-mail. You can find our customer support contacts at the bottom.",
     },
     {
-      question: 'What is your minimum order quantity (MOQ)?',
+      question: "What is your minimum order quantity (MOQ)?",
       answer:
-        'The minimum order quantity advised is 10 boxes for your whole order, which is approximately 3,000 stems.',
+        "The minimum order quantity advised is 10 boxes for your whole order, which is approximately 3,000 stems.",
     },
     {
-      question: 'How can I track my shipment?',
+      question: "How can I track my shipment?",
       answer:
-        'Once your order is dispatched, we will send you a tracking number to monitor the delivery progress in real-time.',
+        "Once your order is dispatched, we will send you a tracking number to monitor the delivery progress in real-time.",
     },
   ];
 
   return (
     <section className="my-16 px-4">
-      <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+      <h2 className="text-2xl sm:text-3xl font-playfair text-center mb-8">
+        Frequently Asked Questions
+      </h2>
       <div className="max-w-3xl mx-auto space-y-4">
         {faqs.map((faq, index) => (
           <div
@@ -46,11 +48,17 @@ const FAQs = () => {
             onClick={() => toggleFAQ(index)}
           >
             <div className="flex justify-between items-center">
-              <h3 className="text-base sm:text-lg font-semibold text-gray-700">{faq.question}</h3>
-              <span className="text-gray-700">{openFAQ === index ? '-' : '+'}</span>
+              <h3 className="text-base sm:text-lg font-montserrat text-gray-700">
+                {faq.question}
+              </h3>
+              <span className="text-gray-700">
+                {openFAQ === index ? "-" : "+"}
+              </span>
             </div>
             {openFAQ === index && (
-              <p className="mt-2 text-sm sm:text-base text-gray-600 transition-all duration-300">{faq.answer}</p>
+              <p className="mt-2 text-sm sm:text-base font-montserrat text-gray-600 transition-all duration-300">
+                {faq.answer}
+              </p>
             )}
           </div>
         ))}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MailSlurp } from "mailslurp-client";
+import emailjs from "emailjs-com";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -9,10 +9,6 @@ const ContactUs = () => {
   });
   const [isAgreed, setIsAgreed] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const mailslurp = new MailSlurp({
-    apiKey: "4c1b26591bd66b68ccd13091a90f3b85de930dde1d52ddd24ad261cfb62a2869",
-  });
 
   const handleChange = (e) => {
     setFormData({
@@ -25,18 +21,19 @@ const ContactUs = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+    };
+
     try {
-      await mailslurp.sendEmail("YOUR_INBOX_ID", {
-        to: ["aloraroyalventures@gmail.com"],
-        subject: `New Contact Request from ${formData.name}`,
-        body: `
-          <h2>Contact Request</h2>
-          <p><strong>Name:</strong> ${formData.name}</p>
-          <p><strong>Email:</strong> ${formData.email}</p>
-          <p><strong>Message:</strong> ${formData.message}</p>
-        `,
-        isHTML: true,
-      });
+      await emailjs.send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        process.env.REACT_APP_EMAILJS_USER_ID
+      );
       alert("Your message has been sent!");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
@@ -56,10 +53,10 @@ const ContactUs = () => {
       <div className="w-full max-w-5xl bg-white/30 backdrop-blur-lg rounded-lg shadow-lg p-6 md:p-12 grid gap-6 md:grid-cols-2">
         {/* Contact Information */}
         <div className="space-y-4">
-          <h2 className="text-4xl font-bold text-white">Get in Touch</h2>
-          <p className="text-white">
+          <h2 className="text-4xl font-playfair text-white">Get in Touch</h2>
+          <p className="text-white font-montserrat">
             We'd love to hear from you! Whether you have a question about our
-            flowers, pricing, or anything else, feel free to get in touch.
+            services, pricing, or anything else, feel free to get in touch.
           </p>
           <div className="text-white">
             <p>
@@ -79,12 +76,14 @@ const ContactUs = () => {
 
         {/* Contact Form */}
         <div>
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Contact Us</h2>
+          <h2 className="text-3xl font-playfair text-gray-800 mb-6">
+            Contact Us
+          </h2>
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-montserrat text-gray-700"
               >
                 Name
               </label>

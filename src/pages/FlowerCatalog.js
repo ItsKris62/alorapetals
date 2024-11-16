@@ -37,7 +37,7 @@ const FlowerCatalog = () => {
 
   return (
     <section className="my-16 px-4 lg:px-6">
-      <h2 className="text-3xl font-bold text-center mb-10">Flower Catalog</h2>
+      <h2 className="text-3xl font-playfair text-center mb-10">Flower Catalog</h2>
       
      {/* Download button with bounce animation and text */}
       <div className="flex justify-center items-center mb-6 space-x-3">
@@ -62,7 +62,7 @@ const FlowerCatalog = () => {
           </button>
         </a>
         {/* Text next to the button */}
-        <span className="font-oswald text-lg font-medium text-gray-800">Download Catalog</span>
+        <span className="font-montserrat text-lg font-medium text-gray-800">Download Catalog</span>
       </div>
 
       {/* Flower Catalog Grid */}

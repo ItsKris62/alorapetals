@@ -1,8 +1,8 @@
-import roseImage from '../assets/images/yellow_roses.jpg';
-import tulipImage from '../assets/images/roses2.jpg';
-import lilyImage from '../assets/images/whiteroses.jpg';
-import orchidImage from '../assets/images/red_roses.jpg';
-import daisyImage from '../assets/images/13.jpg';
+import roseImage from "../assets/images/yellow_roses.jpg";
+import tulipImage from "../assets/images/roses2.jpg";
+import lilyImage from "../assets/images/whiteroses.jpg";
+import orchidImage from "../assets/images/red_roses.jpg";
+import daisyImage from "../assets/images/13.jpg";
 
 const FeaturedFlowers = () => {
   const flowers = [
@@ -37,10 +37,12 @@ const FeaturedFlowers = () => {
       image: daisyImage,
     },
   ];
-  
+
   return (
     <section className="my-16">
-      <h2 className="text-3xl font-bold text-center mb-10">Featured Flowers</h2>
+      <h2 className="text-3xl font-playfair text-center mb-10">
+        Featured Flowers
+      </h2>
       <div className="flex flex-wrap justify-center space-x-4 space-y-4">
         {flowers.map((flower, index) => (
           <div

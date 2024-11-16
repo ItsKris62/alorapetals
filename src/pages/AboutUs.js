@@ -9,7 +9,7 @@ const AboutUsPage = () => {
     <div className="bg-gradient-to-b from-FFFDD0 to-white min-h-screen p-8">
       <div className="container mx-auto px-6 py-12">
         {/* Main Heading */}
-        <h1 className="text-4xl font-bold text-center mb-12">About Us</h1>
+        <h1 className="text-4xl font-playfair text-center mb-12">About Us</h1>
 
         {/* About Section */}
         <div className="grid lg:grid-cols-2 gap-10 mb-16 items-center">
@@ -22,8 +22,8 @@ const AboutUsPage = () => {
 
           {/* Text on Right */}
           <div className="flex flex-col justify-center">
-            <h2 className="text-3xl font-bold mb-4">Who We Are</h2>
-            <p className="text-gray-700 text-lg mb-6">
+            <h2 className="text-3xl font-montserrat mb-4">Who We Are</h2>
+            <p className="text-gray-700 text-lg mb-6 font-lato">
               Our organization is committed to bringing the freshest and most
               beautiful flowers to the global market. We believe in quality,
               dedication, and customer satisfaction. With years of experience,
