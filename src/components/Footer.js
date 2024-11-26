@@ -112,7 +112,7 @@ const Footer = () => {
         </div>
         <div className="text-gray-600 text-sm font-homemade">
           This site was created by{" "}
-          <span className="font-semibold">FootprintsCo</span>.
+          <span className="font-semibold">Veriwoks</span>.
         </div>
       </div>
 
