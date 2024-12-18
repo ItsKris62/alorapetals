@@ -7,6 +7,7 @@ import FeaturedFlowers from "../components/FeaturedFlowers";
 import FAQs from "../components/FAQs";
 import ContactSection from "../components/ContactSection";
 import Services from "../components/Services";
+import WhatsAppButton from '../components/WhatsAppButton';
 
 const HomePage = () => {
   const { ref: aboutRef, inView: aboutInView } = useInView({
@@ -60,6 +61,9 @@ const HomePage = () => {
 
       {/* Contact Section */}
       <ContactSection />
+
+      {/* WhatsApp Button */}
+      <WhatsAppButton />
     </>
   );
 };
