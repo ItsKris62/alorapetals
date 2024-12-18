@@ -5,7 +5,7 @@ const WhatsAppButton = () => {
   const openWhatsApp = () => {
     const phoneNumber = '+254710272174'; 
     const message = encodeURIComponent("Hello, I'd like to get in touch!");
-    const url = `https://wa.me/254710272174${phoneNumber}?text=${message}`;
+    const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, '_blank');
   };
 
